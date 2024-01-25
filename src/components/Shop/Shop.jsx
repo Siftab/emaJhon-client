@@ -116,7 +116,7 @@ const Shop = () => {
                     <button onClick={handlePrev}>prev</button>
                     {
                         pages.map(page=><button key={page} onClick={()=> setCurrentPage(page)}
-                         className={currentPage=== page && "selected"}>{page}</button>)
+                         className={currentPage=== page?"selected":""}>{page}</button>)
                     }
                     <button onClick={handleNext}>next</button>
                     <select defaultValue={itemsPerPage} name="" onChange={handleItemsPerPage} id="">
